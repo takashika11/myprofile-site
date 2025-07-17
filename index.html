@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ここにコンテンツを追加していきます -->
+
+    <!-- ヘッダー部分 -->
+    <header>
+  <div class="container">
+    <div class="logo">mystyle</div>
+
+    <!-- チェックボックスとラベルでハンバーガー制御 -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="nav-menu">
+            <ul>
+                <li><a href="profile">プロフィール</a></li>
+                <li><a href="skills">スキル</a></li>
+                <li><a href="hobbies">趣味・特技</a></li>
+                <li><a href="history">経歴</a></li>
+                <li><a href="contact">お問合せ</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- プロフィールセクション -->
+    <section id="profile" class="profile">
+        <div class="container">
+            <h1> My  Profile</h1>
+            <div class="profile-content">
+            <div class="profile-image">
+                <img src="images/image0 (6).jpeg" alt="プロフィール画像" />
+            </div>
+            <div class="profile-text">
+            <h2>Takashi Shikan</h2>
+        <p class="profile-title">サラリーマン</p>
+        <p class="profile-description">
+            初めまして、私は中小企業の経理として働いているサラリーマンです。結婚と子育てをする中で将来的に在宅で仕事をする事を目標に今回Webエンジニアの勉強に参加させて頂きました。
+        </p>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">スキル</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-name">経理</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">スポーツ</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 20%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">コツコツ勉強</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 趣味・特技セクション -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">趣味・特技</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon"></div>
+                    <h3>読書</h3>
+                    <p>ビジネス書などを読むことが多いです。</p>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-icon"></div>
+                    <h3>スポーツ</h3>
+                    <p>スノーボード、ランニングなどをすることが好きです。</p>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-icon"></div>
+                    <h3>映画、漫画</h3>
+                    <p>アクション系の映画鑑賞,漫画を読む事を好む人</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 経歴セクション -->
+    <section id="history" class="history">
+        <div class="container">
+            <h2 class="section-title">経歴</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+            <div class="timeline-date">2015年~現在</div>
+            <div class="timeline-content">
+                <h3>株式会社A</h3>
+                <p>経理、広告担当として店舗運営に参加しております。</p>
+            </div>
+        </div>
+      
+        <div class="timeline-item">
+            <div class="timeline-date">2010年~2015年</div>
+            <div class="timeline-content">
+                <h3>株式会社B</h3>
+                <p>飲食店店長として、店舗マネージメントをしておりました。</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2007年~2010年</div>
+            <div class="timeline-content">
+                <h3>C株式会社</h3>
+                <p>専門学校を卒業後スポーツジムでトレーナとして勤務</p>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- お問い合わせフォーム部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター部分 -->
+    <footer>
+     <div class="container">
+        <p> 2023 TAKASHI SHIKAN All Rights Reserved.</p>
+     </div>
+    </footer>
+</body>
+</html>
